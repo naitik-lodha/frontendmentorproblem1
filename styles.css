@@ -1,0 +1,101 @@
+body
+{
+    height: 100%;
+    width: 100%;
+}
+.sedans,.suvs,.luxury
+{
+   
+    height: 405px;
+    width: 235px;
+    display: inline;
+
+
+}
+.car-heading
+{
+    font-family: 'Audiowide';
+    margin-bottom: 10%;
+    margin-left: 10%;
+    color: white;
+}
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 12.5%;
+
+
+
+}
+.sedans{
+    background-color: #e88424;
+    border-bottom-left-radius:2.5% ;
+    border-top-left-radius: 2.5%;
+}
+.suvs
+{
+    background-color: #086c74;
+}
+.luxury{
+    background-color: #08443c;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+}
+@media (max-width:800px){
+    .container
+    {
+        
+        flex-direction: column;
+    
+        margin-top: 5%;
+    
+        align-items: center;
+    }
+    .suvs,.sedans,.luxury{
+        width: 306px;
+    }
+    .sedans
+    {
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 2.5%;
+        border-top-right-radius: 2.5%;
+    }
+    .luxury{
+        border-bottom-left-radius: 2.5%;
+        border-bottom-right-radius: 2.5%;
+        border-top-right-radius: 0%;
+    }
+
+
+}
+.car-icon{
+    margin-left: 10%;
+    margin-top: 10%;
+
+}
+
+.car-info
+{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: left;
+    color: #F5F4F2;
+    font-family: 'Trirong';
+    font-size: smaller;
+}
+
+.learn-more{
+    background-color: white;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 15%;
+    font-family: 'Trirong';
+    outline: none;
+    padding:10px 25px;
+    border: none;
+}
+
